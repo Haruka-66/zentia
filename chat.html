@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENTIA</title>
+    <link rel="stylesheet" href="./assets/styles/more.css">
+    <link rel="icon" href="./assets/img/log.png">
+</head>
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="rose-outline"></ion-icon>
+    </div>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <img src="./assets/img/Ghost-unscreen.gif" alt="logo" class="logo" id="cloud">
+                <span>Zentia</span>
+            </div>
+            <button class="boton" onclick="window.location.href='login.html';">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </button>
+        </div>
+        <!--Navegador-->
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a id="inbox" href="index.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html">
+                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                        <span>Chat</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="informacion.html">
+                        <ion-icon name="library-outline"></ion-icon>
+                        <span>Información</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tareas.html">
+                        <ion-icon name="happy-outline"></ion-icon>
+                        <span>Tareas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="gestion_emocional.html">
+                        <ion-icon name="fitness-outline"></ion-icon>
+                        <span>Gestión Emocional</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="musica.html">
+                        <ion-icon name="headset-outline"></ion-icon>
+                        <span>Música</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="more.html">
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                        <span>Más</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--modo oscuro-->
+        <div>
+            <div class="linea"></div>
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Drak Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </nav>
+        <!--zentia-->
+         <div class="usuario">
+                <img src="./assets/img/Ghost.gif" alt="">
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre">Zentia</span>
+                        <span class="email">Zentia@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--contenido-->
+    <main>
+
+        <script type="text/javascript">
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                  window.voiceflow.chat.load({
+                    verify: { projectID: '6706619388001e9aa0e4025c' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                  });
+                }
+                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+        </script>
+
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>

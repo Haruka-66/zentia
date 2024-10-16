@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENTIA</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="icon" href="./assets/img/log.png">
+</head>
+<body onclick="PlayAudio">
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="rose-outline"></ion-icon>
+    </div>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <img src="./assets/img/Ghost-unscreen.gif" alt="logo" class="logo" id="cloud">
+                <span>Zentia</span>
+            </div>
+            <button class="boton" onclick="window.location.href='login.html';">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </button>
+
+        </div>
+        <!--Navegador-->
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a id="inbox" href="index.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html">
+                        <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                        <span>Chat</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="informacion.html">
+                        <ion-icon name="library-outline"></ion-icon>
+                        <span>Información</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tareas.html">
+                        <ion-icon name="happy-outline"></ion-icon>
+                        <span>Tareas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="gestion_emocional.html">
+                        <ion-icon name="fitness-outline"></ion-icon>
+                        <span>Gestión Emocional</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="musica.html">
+                        <ion-icon name="headset-outline"></ion-icon>
+                        <span>Música</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="more.html">
+                        <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                        <span>Más</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--modo oscuro-->
+        <div>
+            <div class="linea"></div>
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Drak Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </nav>
+        <!--zentia-->
+         <div class="usuario">
+                <img src="./assets/img/Ghost.gif" alt="">
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre">Zentia</span>
+                        <span class="email">Zentia@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--contenido-->
+    <main>
+        <div class="container">
+            <div class="left-content">
+                <div class="presentacion">
+                    
+                    <h2>¡Bienvenido a Zentia!</h2>
+                    <br>
+                    <p>Hola, soy Zentia, una plataforma y asistente virtual creada para acompañarte en tu camino hacia el bienestar mental. Mi objetivo es ofrecerte herramientas, recursos y apoyo cuando más lo necesites. Juntos, podemos trabajar para encontrar paz, equilibrio y claridad en tu vida.</p>
+                    <br><br>
+                    <!-- Logos de redes sociales -->
+                    <div class="ion-icon">
+                        <a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.twitter.com" target="_blank"><ion-icon name="logo-xing"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-animation">
+                <img src="./assets/img/hu.gif" alt="">
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Espacio grande para desplazar hacia abajo -->
+    <div class="espacio"></div>
+
+    <div class="como-ayudarte">
+        <h2>¿Cómo puedo ayudarte?</h2>
+        <p>La vida está llena de desafíos, y sé que puede ser difícil enfrentarlos. Ya sea que estés pasando por momentos de estrés, ansiedad, depresión o simplemente necesites un espacio para reflexionar, estoy aquí para escucharte y brindarte orientación. No soy un reemplazo de los profesionales de salud mental, pero puedo ayudarte a dar los primeros pasos o complementar tu proceso terapéutico.</p>
+        
+        <h3>¿Qué puedes esperar de mí?</h3>
+        <ul>
+            <li>Recursos sobre salud mental: Artículos, recomendaciones y guías sobre diferentes temas como manejo del estrés, mejora del ánimo, y desarrollo personal.</li>
+            <li>Herramientas interactivas: Ejercicios de respiración, meditación guiada, y actividades para ayudarte a centrarte en el presente.</li>
+            <li>Consejos personalizados: Dependiendo de lo que estés enfrentando, puedo proporcionarte sugerencias prácticas basadas en enfoques psicológicos.</li>
+        </ul>
+        
+        <h3>Importancia de buscar ayuda profesional</h3>
+        <p>Aunque Zentia puede proporcionarte consejos útiles y herramientas para mejorar tu bienestar, es vital que consultes a un profesional de la salud mental cuando sea necesario. Los psicólogos, psiquiatras y terapeutas están capacitados para ofrecerte una atención personalizada que complemente lo que encuentres aquí.</p>
+    </div>
+        <audio id="musica" autoplay loop>
+            <source src="assets/videoplayback.m4a" type="audio/mpeg">
+        </audio>
+    </main>
+    <script>
+        function PlayAudio(){
+            document.getElementById("musica").play();
+
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/script/script.js"></script>
+
+</body>
+</html>
+
